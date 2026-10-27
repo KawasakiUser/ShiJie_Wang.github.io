@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const heroPath = `${import.meta.env.BASE_URL}images/hero-spacetime.jpg`;
 ---
 
 <BaseLayout>
@@ -17,7 +18,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     <main class="slides">
       <section class="slide cover" id="cover">
-        <div class="cover-visual" aria-hidden="true"></div>
+        <div class="cover-visual" aria-hidden="true" style={`background-image:url('${heroPath}')`}></div>
         <div class="slide-inner cover-inner">
           <div class="eyebrow" data-en="A personal manifesto" data-zh="个人宣言">A personal manifesto</div>
           <h1>
@@ -129,7 +130,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .slides { scroll-snap-type:y mandatory; }
     .slide { min-height:100vh; position:relative; overflow:hidden; scroll-snap-align:start; display:flex; align-items:center; }
     .slide-inner { width:min(1280px,89vw); margin:0 auto; position:relative; z-index:2; padding:112px 0 72px; }
-    .cover-visual { position:absolute; z-index:0; inset:0 0 0 33%; background:url('/ShiJie_Wang.github.io/images/hero-spacetime.jpg') center right/cover no-repeat; opacity:.88; }
+    .cover-visual { position:absolute; z-index:0; inset:0 0 0 33%; background-position:center right; background-size:cover; background-repeat:no-repeat; opacity:.88; }
     .cover:after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,var(--paper) 0%,rgba(244,240,232,.96) 34%,rgba(244,240,232,.45) 58%,rgba(244,240,232,0) 82%); z-index:1; }
     .cover-inner { padding-top:136px; }
     .eyebrow { color:var(--yellow); text-transform:uppercase; letter-spacing:.18em; font:600 12px 'DM Mono',monospace; margin-bottom:30px; }
