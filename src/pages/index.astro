@@ -1,0 +1,155 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <div class="site-shell" data-language="en">
+    <header class="topbar">
+      <a class="wordmark" href="#cover" aria-label="Shijie Wang home">Shijie Wang</a>
+      <nav aria-label="Primary navigation">
+        <a href="#question" data-en="Question" data-zh="问题">Question</a>
+        <a href="#directions" data-en="Directions" data-zh="方向">Directions</a>
+        <a href="#work" data-en="Work" data-zh="工作">Work</a>
+        <a href="#about" data-en="About" data-zh="关于">About</a>
+        <button class="language-switch" type="button" aria-label="Switch language">中 / EN</button>
+      </nav>
+    </header>
+
+    <main class="slides">
+      <section class="slide cover" id="cover">
+        <div class="cover-visual" aria-hidden="true"></div>
+        <div class="slide-inner cover-inner">
+          <div class="eyebrow" data-en="A personal manifesto" data-zh="个人宣言">A personal manifesto</div>
+          <h1>
+            <span data-en="Many shall be restored" data-zh="今日衰朽者">Many shall be restored</span>
+            <span data-en="that now are fallen;" data-zh="将来或重放异彩；">that now are fallen;</span>
+            <span data-en="many shall fall that now" data-zh="今日受青睐者">many shall fall that now</span>
+            <span>are in <em data-en="honor." data-zh="亦可能失色。">honor.</em></span>
+          </h1>
+          <div class="rule"></div>
+          <div class="author-line">
+            <strong>Shijie Wang</strong>
+            <span data-en="Researcher · Author · System Builder" data-zh="研究者 · 作者 · 系统构造者">Researcher · Author · System Builder</span>
+          </div>
+          <p class="cover-description" data-en="Theory, systems, and the work of building what comes next." data-zh="理论、系统，以及对未来现实的持续构造。">Theory, systems, and the work of building what comes next.</p>
+          <div class="citation">HORACE · ARS POETICA · 70–71</div>
+        </div>
+        <span class="slide-number">01</span>
+      </section>
+
+      <section class="slide question" id="question">
+        <div class="slide-inner split-layout">
+          <div>
+            <div class="eyebrow" data-en="The question behind the work" data-zh="工作的核心问题">The question behind the work</div>
+            <h2 data-en="How can complex systems be understood, built, and transformed?" data-zh="复杂系统如何被理解、构造，并重新改变？">How can complex systems be understood, built, and transformed?</h2>
+          </div>
+          <div class="statement">
+            <p data-en="I study the structures that make ideas intelligible, buildable, and durable in the real world." data-zh="我关注那些让思想变得可理解、可构造，并能在现实中持续运行的结构。">I study the structures that make ideas intelligible, buildable, and durable in the real world.</p>
+            <p class="muted" data-en="From theoretical physics to intelligent machines, from education to entrepreneurship." data-zh="从理论物理到智能机器，从教育到创业。">From theoretical physics to intelligent machines, from education to entrepreneurship.</p>
+          </div>
+        </div>
+        <span class="slide-number">02</span>
+      </section>
+
+      <section class="slide directions" id="directions">
+        <div class="slide-inner">
+          <div class="eyebrow" data-en="Three directions" data-zh="三条方向">Three directions</div>
+          <div class="direction-grid">
+            <article><span class="index">01</span><h3 data-en="Theory" data-zh="理论">Theory</h3><p data-en="General relativity, quantum theory, effective field theory, and mathematical physics." data-zh="广义相对论、量子理论、有效场论与数学物理。">General relativity, quantum theory, effective field theory, and mathematical physics.</p></article>
+            <article><span class="index">02</span><h3 data-en="Systems" data-zh="系统">Systems</h3><p data-en="Embodied intelligence, robotics, control, knowledge systems, and institutional design." data-zh="具身智能、机器人、控制、知识系统与组织设计。">Embodied intelligence, robotics, control, knowledge systems, and institutional design.</p></article>
+            <article><span class="index">03</span><h3 data-en="Creation" data-zh="创造">Creation</h3><p data-en="Education, books, entrepreneurship, and durable work that can outlast a single project." data-zh="教育、书籍、创业，以及能够超越单个项目的长期作品。">Education, books, entrepreneurship, and durable work that can outlast a single project.</p></article>
+          </div>
+        </div>
+        <span class="slide-number">03</span>
+      </section>
+
+      <section class="slide work" id="work">
+        <div class="slide-inner">
+          <div class="eyebrow" data-en="Current coordinates" data-zh="当前坐标">Current coordinates</div>
+          <div class="work-grid">
+            <article class="work-item featured"><span class="status">IN PROGRESS</span><h3 data-en="Kerr / EFT Gravity" data-zh="Kerr / EFT 引力">Kerr / EFT Gravity</h3><p data-en="Testing the Newman–Janis route from static EFT seeds to controlled rotating candidates." data-zh="从静态 EFT 种子到受控旋转候选解，检验 Newman–Janis 路径。">Testing the Newman–Janis route from static EFT seeds to controlled rotating candidates.</p><span class="arrow">↗</span></article>
+            <article class="work-item"><span class="status">BUILDING</span><h3 data-en="Physics as a system" data-zh="作为系统的物理学">Physics as a system</h3><p data-en="A low-entry, high-ceiling route through quantum mechanics and mathematical structure." data-zh="一条低起点、高出口的量子力学与数学结构学习路线。">A low-entry, high-ceiling route through quantum mechanics and mathematical structure.</p><span class="arrow">↗</span></article>
+            <article class="work-item"><span class="status">NEXT</span><h3 data-en="Embodied intelligence" data-zh="具身智能">Embodied intelligence</h3><p data-en="Local models, cloud cognition, reusable skills, and real-time control." data-zh="本地模型、云端认知、可复用技能与实时控制。">Local models, cloud cognition, reusable skills, and real-time control.</p><span class="arrow">↗</span></article>
+          </div>
+        </div>
+        <span class="slide-number">04</span>
+      </section>
+
+      <section class="slide archive" id="archive">
+        <div class="slide-inner split-layout archive-layout">
+          <div><div class="eyebrow" data-en="The archive" data-zh="作品档案">The archive</div><h2 data-en="One identity. Many forms of work." data-zh="一个身份，多种作品形态。">One identity. Many forms of work.</h2></div>
+          <div class="archive-list">
+            <a href="#work"><span>Research</span><small>papers · arXiv · methods</small><b>↗</b></a>
+            <a href="#directions"><span>Ideas</span><small>essays · principles · books</small><b>↗</b></a>
+            <a href="#work"><span>Build</span><small>projects · code · systems</small><b>↗</b></a>
+            <a href="#about"><span>Connect</span><small>platforms · collaboration · contact</small><b>↗</b></a>
+          </div>
+        </div>
+        <span class="slide-number">05</span>
+      </section>
+
+      <section class="slide about" id="about">
+        <div class="slide-inner about-inner">
+          <div class="eyebrow" data-en="About / Contact" data-zh="关于 / 联系">About / Contact</div>
+          <h2 data-en="Build work that remains useful after the moment has passed." data-zh="构造那些在时间过去之后，仍然有用的作品。">Build work that remains useful after the moment has passed.</h2>
+          <div class="about-bottom"><p data-en="This site is the public index of my research, ideas, and long-term projects." data-zh="这里是我的研究、思想与长期项目的公共索引。">This site is the public index of my research, ideas, and long-term projects.</p><a class="contact-link" href="mailto:hello@shijie.wang">hello@shijie.wang ↗</a></div>
+        </div>
+        <span class="slide-number">06</span>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const shell = document.querySelector('.site-shell');
+    const languageButton = document.querySelector('.language-switch');
+    const updateLanguage = (lang) => {
+      shell.dataset.language = lang;
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+      document.querySelectorAll('[data-en][data-zh]').forEach((element) => {
+        element.textContent = element.dataset[lang];
+      });
+      languageButton.textContent = lang === 'zh' ? 'EN / 中' : '中 / EN';
+    };
+    languageButton.addEventListener('click', () => updateLanguage(shell.dataset.language === 'en' ? 'zh' : 'en'));
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:ital@0;1&display=swap');
+    :root { --paper:#f4f0e8; --ink:#121212; --muted:#5b5b5b; --yellow:#d1a11c; --line:rgba(18,18,18,.16); --blue:#0b385f; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Inter,Arial,sans-serif; }
+    a { color:inherit; text-decoration:none; }
+    .site-shell { background:var(--paper); }
+    .topbar { position:fixed; z-index:10; top:0; left:0; right:0; display:flex; justify-content:space-between; align-items:center; padding:22px 5.2vw; color:var(--ink); mix-blend-mode:multiply; }
+    .wordmark { font-size:14px; font-weight:800; letter-spacing:.03em; }
+    nav { display:flex; gap:22px; align-items:center; font-size:12px; }
+    nav a { color:#545454; } nav a:hover { color:var(--ink); }
+    .language-switch { border:0; background:transparent; color:var(--ink); cursor:pointer; font:500 11px 'DM Mono',monospace; padding:0; }
+    .slides { scroll-snap-type:y mandatory; }
+    .slide { min-height:100vh; position:relative; overflow:hidden; scroll-snap-align:start; display:flex; align-items:center; }
+    .slide-inner { width:min(1280px,89vw); margin:0 auto; position:relative; z-index:2; padding:112px 0 72px; }
+    .cover-visual { position:absolute; z-index:0; inset:0 0 0 33%; background:url('/ShiJie_Wang.github.io/images/hero-spacetime.jpg') center right/cover no-repeat; opacity:.88; }
+    .cover:after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,var(--paper) 0%,rgba(244,240,232,.96) 34%,rgba(244,240,232,.45) 58%,rgba(244,240,232,0) 82%); z-index:1; }
+    .cover-inner { padding-top:136px; }
+    .eyebrow { color:var(--yellow); text-transform:uppercase; letter-spacing:.18em; font:600 12px 'DM Mono',monospace; margin-bottom:30px; }
+    h1,h2,h3,p { margin-top:0; }
+    h1 { max-width:690px; margin-bottom:38px; font-size:clamp(39px,4.2vw,68px); line-height:1.15; letter-spacing:-.055em; font-weight:800; }
+    h1 span { display:block; } h1 em { color:var(--yellow); font-style:normal; }
+    h2 { max-width:750px; margin-bottom:0; font-size:clamp(37px,4.4vw,70px); line-height:1.08; letter-spacing:-.055em; font-weight:700; }
+    .rule { width:420px; max-width:80%; height:2px; background:rgba(18,18,18,.2); margin-bottom:23px; }
+    .author-line { display:flex; flex-direction:column; gap:6px; } .author-line strong { font-size:22px; } .author-line span { color:var(--muted); font-size:14px; }
+    .cover-description { margin:34px 0 0; color:var(--muted); font-size:16px; }
+    .citation { position:absolute; bottom:66px; left:0; color:#777; font:11px 'DM Mono',monospace; letter-spacing:.13em; }
+    .slide-number { position:absolute; z-index:3; right:5.2vw; bottom:66px; color:#777; font:11px 'DM Mono',monospace; }
+    .split-layout { display:grid; grid-template-columns:1.1fr .9fr; gap:90px; align-items:end; }
+    .statement { border-top:2px solid var(--ink); padding-top:24px; max-width:430px; font-size:20px; line-height:1.55; }
+    .statement .muted { color:var(--muted); font-size:15px; margin-top:28px; }
+    .directions { background:#111; color:#f6f1e8; } .directions .eyebrow { color:#e1b534; }
+    .direction-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; margin-top:75px; } .direction-grid article { border-top:1px solid rgba(255,255,255,.35); padding-top:20px; } .index { color:#d1a11c; font:11px 'DM Mono',monospace; } .direction-grid h3 { font-size:32px; margin:42px 0 18px; } .direction-grid p { color:#c5c1b8; max-width:280px; line-height:1.7; font-size:15px; }
+    .work-grid { display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:18px; margin-top:62px; } .work-item { min-height:285px; padding:24px; border-top:2px solid var(--ink); background:rgba(255,255,255,.3); position:relative; } .work-item.featured { background:#111; color:#f6f1e8; border-top-color:var(--yellow); } .status { font:11px 'DM Mono',monospace; color:var(--yellow); letter-spacing:.1em; } .work-item h3 { font-size:25px; line-height:1.12; margin:44px 0 18px; } .work-item p { color:var(--muted); line-height:1.65; font-size:14px; max-width:290px; } .featured p { color:#c5c1b8; } .arrow { position:absolute; right:23px; bottom:19px; color:var(--yellow); font-size:20px; }
+    .archive { background:#e9e4d9; } .archive-list { border-top:2px solid var(--ink); } .archive-list a { display:grid; grid-template-columns:1fr 1.6fr auto; gap:18px; align-items:center; padding:22px 0; border-bottom:1px solid var(--line); } .archive-list span { font-size:23px; font-weight:600; } .archive-list small { color:var(--muted); font:12px 'DM Mono',monospace; } .archive-list b { font-size:20px; font-weight:400; }
+    .about { background:#111; color:#f6f1e8; } .about .eyebrow { color:#e1b534; } .about-inner { display:flex; flex-direction:column; justify-content:space-between; min-height:70vh; } .about h2 { max-width:860px; } .about-bottom { display:flex; justify-content:space-between; align-items:end; gap:30px; border-top:1px solid rgba(255,255,255,.3); padding-top:22px; } .about-bottom p { color:#c5c1b8; font-size:15px; } .contact-link { color:#e1b534; font-size:15px; }
+    @media(max-width:800px){ .topbar { padding:18px 6vw; } nav a { display:none; } .slide-inner { width:88vw; padding:105px 0 85px; } .cover-visual { inset:33% 0 0 0; opacity:.7; } .cover:after { background:linear-gradient(180deg,var(--paper) 0%,rgba(244,240,232,.94) 44%,rgba(244,240,232,.18) 100%); } h1 { font-size:clamp(33px,9vw,52px); } .split-layout,.direction-grid,.work-grid { grid-template-columns:1fr; gap:32px; } .direction-grid { margin-top:45px; } .direction-grid h3 { margin-top:23px; } .work-grid { margin-top:40px; } .work-item { min-height:220px; } .archive-list a { grid-template-columns:1fr auto; } .archive-list small { grid-column:1; } .archive-list b { grid-column:2; grid-row:1 / span 2; } .about-bottom { flex-direction:column; align-items:flex-start; } .citation { left:6vw; bottom:30px; } .slide-number { right:6vw; bottom:30px; } }
+  </style>
+</BaseLayout>
